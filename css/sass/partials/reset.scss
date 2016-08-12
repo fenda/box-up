@@ -1,11 +1,3 @@
-/**
- * partials/reset
- * ---
- * Reset file
- * NOTE: also `normalize.css` is used
- */
-
-
 // Global box-sizing
 *,
 *:after,
@@ -55,7 +47,7 @@ input[type="search"] {
 
 // Text selection
 ::selection {
-  background-color: $selection-bg;
+  background-color: $secondary-color;
   color: $body-bg;
   text-shadow: none;
 }

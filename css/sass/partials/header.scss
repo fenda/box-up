@@ -1,13 +1,45 @@
-/**
- * partials/header
- * ---
- */
+.header {background:#e8e8e8; padding:15px 50px;
+  .logo {float:left;}
+  .header_widgets {float:right; padding-top:13px;
+    div {float:left; margin-left:40px;
+      i {float:left; color:$main-color; border:3px solid $main-color; border-radius:20px; font-size:20px; text-align:center; width:38px; height:38px; line-height:32px; margin-right:10px;;}
+      p {font-size:15px; font-weight:bold; text-transform:uppercase; color:$main-color; float:left; margin:0;}
+      &.phone {
+        i {line-height:35px;}
+      }
+    }
+  }
+}
 
-
-// Header container
-.header {}
-
-// Logo
-.logo {}
-
-.logo-img {}
+.nav_bar {background:#d3d5d9; padding:0 40px;
+  .nav {
+    ul {list-style:none; margin:0; padding:0;
+      li {position:relative; float:left; text-transform:uppercase; font-weight:600;
+        &:after {content:''; position:absolute; width:100%; height:0; background:$main-color; top:0; left:0; z-index:0; transition:height .4s; -o-transition:height .4s; -ms-transition: height .4s; -moz-transition: height .4s; -webkit-transition: height .4s;}
+        &:hover {
+          &:after {height:100%;}
+          a {color:#FFF;}
+          ul {
+            li {
+              a {color:#666;}
+            }
+          }
+        }
+        a {padding:16px 15px; display:inline-block; transition:.5s; position:relative; z-index:1;
+          &:hover {text-decoration:none; color:#FFF;}
+        }
+        ul {position:absolute; top:110px; left:0; margin:0; padding:0; width:220px; transition:.5s; opacity:0; visibility:hidden;
+          li {display:inline-block; width:100%; padding:0; border:1px solid #e3e3e3; border-width:1px 1px 0 1px; text-transform:uppercase; margin:0;
+            a {padding:8px 10px; background:#FFF; width:100%; transition:.5s; 
+              &:hover {background-color:#ececec; color:$main-color;}
+            }
+            &:last-child {border-width:1px;}
+          }
+        }
+        &:hover {
+          ul {top:49px; opacity:1; visibility:visible;}
+        }
+      }
+    }
+  }
+}

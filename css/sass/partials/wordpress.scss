@@ -1,18 +1,3 @@
-/**
- * partials/wordpress
- * ---
- * Wordpess core classes
- */
-
-
-.sticky {}
-
-.bypostauthor {}
-
-/**
- * Alignment
- */
-
 .alignnone {
   margin: $margin-vertical-base $margin-horizontal-large $margin-vertical-large 0;
 }
@@ -31,11 +16,6 @@
   float: left;
   margin: $margin-vertical-base $margin-horizontal-large $margin-vertical-large 0;
 }
-
-
-/**
- * Gallery & images
- */
 
 .wp-caption {
   background: $body-bg;
