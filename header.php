@@ -36,6 +36,7 @@
 				</div>
 			</header>
 			<div class="nav_bar clear">
+				<a class="open_nav"><i class="fa fa-bars" aria-hidden="true"></i> Menu</a>
 				<nav class="nav" role="navigation">
 					<?php html5blank_nav(); ?>
 				</nav>

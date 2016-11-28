@@ -1,8 +1,8 @@
 <?php get_header(); ?>
 
 	<main role="main" class="clear">
-			<h1><?php the_title(); ?></h1>
-		<section>
+		<h1 class="page__title"><?php the_title(); ?></h1>
+		<section class="content-padding">
 
 		<?php if (have_posts()): while (have_posts()) : the_post(); ?>
 			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>

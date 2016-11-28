@@ -1,19 +1,10 @@
 <?php get_header(); ?>
-
-	<main role="main">
-		<!-- section -->
-		<section>
-
-			<h1><?php _e( 'Archives', 'html5blank' ); ?></h1>
-
+	<main role="main" class="clear">
+		<h1 class="page__title"><?php single_cat_title(); ?></h1>
+		<section class="content-padding product-list">
 			<?php get_template_part('loop'); ?>
-
 			<?php get_template_part('pagination'); ?>
-
 		</section>
-		<!-- /section -->
+		<?php get_sidebar(); ?>
 	</main>
-
-<?php get_sidebar(); ?>
-
 <?php get_footer(); ?>

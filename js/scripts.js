@@ -2,7 +2,11 @@
 	"use strict";
 
 	$(function () {
-		// DOM ready, take it away
+		$('.open_nav').on('click', function(e){
+			e.preventDefault();
+			$(this).toggleClass('open');
+			$('.nav_bar .nav').toggleClass('open');
+		});
 	});
 
 } ( this, jQuery ));

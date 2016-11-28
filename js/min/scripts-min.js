@@ -1,0 +1,1 @@
+!function(n,$,t){"use strict";$(function(){$(".open_nav").on("click",function(n){n.preventDefault(),$(this).toggleClass("open"),$(".nav_bar .nav").toggleClass("open")})})}(this,jQuery);
