@@ -28,7 +28,9 @@ body {
 
 img {
   max-width: 100%;
-  vertical-align: middle; }
+  vertical-align: middle;
+  width: 100%;
+  height: auto; }
 
 a {
   color: #444;
@@ -128,7 +130,8 @@ h1 {
   .product_list > div {
     flex-basis: 25%;
     float: left;
-    padding: 0 10px; }
+    padding: 0 10px;
+    margin-bottom: 20px; }
     .product_list > div img {
       border: 2px solid #621d69;
       width: 100%;
@@ -182,7 +185,6 @@ h1 {
       color: #FFF; }
 
 .home_widgets {
-  background: #f0f2f5;
   text-align: center;
   padding: 20px 50px 90px; }
   .home_widgets h1 {
@@ -221,16 +223,17 @@ h1 {
       float: left;
       font-size: 40px;
       margin-right: 15px; }
-    .home_widgets > div img {
-      width: 100%;
-      height: auto; }
 
 .home_widgets--news {
-  background: #FFF; }
-  .home_widgets--news h1 {
-    margin-bottom: 40px; }
-  .home_widgets--news > div {
-    width: 32%; }
+  background: #f0f2f5; }
+
+.home_widgets--news .newsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%; }
+  .home_widgets--news .newsContainer > div {
+    flex-basis: 33.33333%;
+    padding: 0 20px; }
 
 .page__title {
   background: #121e24;
@@ -605,7 +608,10 @@ h1 {
     width: 100%;
     border: none;
     border-bottom: 1px solid #e3e3e3;
-    padding-bottom: 30px; } }
+    padding-bottom: 30px; }
+
+  .product_list > div {
+    flex-basis: 33.333333%; } }
 @media (min-width: 767px) {
   .open_nav {
     display: none; } }
@@ -654,7 +660,15 @@ h1 {
     font-weight: 600;
     text-decoration: none; }
     .open_nav i {
-      margin-right: 4px; } }
+      margin-right: 4px; }
+
+  .home_widgets--news .newsContainer > div {
+    flex-basis: 100%;
+    padding: 0 100px;
+    margin-bottom: 30px; } }
+@media (max-width: 640px) {
+  .product_list > div {
+    flex-basis: 50%; } }
 @media (max-width: 580px) {
   h1 {
     font-size: 26px; }
@@ -679,7 +693,13 @@ h1 {
 
   .footer .footer-widgets > div {
     width: 100%;
-    margin: 0; } }
+    margin: 0; }
+
+  .home_widgets--news .newsContainer > div {
+    padding: 0; } }
+@media (max-width: 400px) {
+  .product_list > div {
+    flex-basis: 100%; } }
 @media print {
   *,
   *:before,

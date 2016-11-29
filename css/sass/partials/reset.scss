@@ -20,13 +20,7 @@ body {
   background-color: $body-bg;
 }
 
-img {
-  // Don't allow <IMG> to be larger then its container
-  max-width: 100%;
-  // Omit space caused by default style, between images lines
-  vertical-align: middle;
-}
-
+img {max-width:100%; vertical-align:middle; width:100%; height:auto;}
 a {
   color: $text-color;
   text-decoration: none;

@@ -16,7 +16,7 @@
 <?php if ( is_active_sidebar( 'promowidgets' ) ) { ?>
 <div class="home_widgets home_widgets--news">
 	<h1>Novidades &amp; Promoções</h1>
-	<?php dynamic_sidebar( 'promowidgets' ); ?>
+	<div class="newsContainer"><?php dynamic_sidebar( 'promowidgets' ); ?></div>
 </div>
 <?php } ?>
 

@@ -37,6 +37,8 @@
 @media (max-width: 820px) {
 	.sidebar {width:100%; padding:0 50px;}
 	.content-padding {width:100%; border:none; border-bottom:1px solid #e3e3e3; padding-bottom:30px;}
+
+	.product_list > div {flex-basis:33.333333%;}
 }
 
 @media (min-width: 767px) {
@@ -74,6 +76,14 @@
 	.open_nav {text-transform:uppercase; font-weight:600; text-decoration:none;
 		i {margin-right:4px;}
 	}
+
+	.home_widgets--news .newsContainer {
+		& > div {flex-basis:100%; padding:0 100px; margin-bottom:30px;}
+	}
+}
+
+@media (max-width: 640px) {
+	.product_list > div {flex-basis:50%;}
 }
 
 @media (max-width: 580px) {
@@ -93,4 +103,12 @@
 			& > div {width:100%; margin:0;}
 		}
 	}
+
+	.home_widgets--news .newsContainer {
+		& > div {padding:0;}
+	}
+}
+
+@media (max-width: 400px) {
+	.product_list > div {flex-basis:100%;}
 }
